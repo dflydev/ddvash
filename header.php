@@ -38,8 +38,9 @@
                 </<?php echo $heading_tag; ?>>
                 <div id="site-description"><?php bloginfo( 'description' ); ?></div>
 
+                <?php if ( get_option('ddvash_layout_header_image_show') ) : ?>
+                <div id="site-header-image">
                 <?php
-                if ( get_option('ddvash_layout_header_image_show') ) {
                 if ( is_singular() && has_post_thumbnail( $post->ID ) &&
                     ( /* $src, $width, $height */ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'post-thumbnail' ) ) &&
                         $image[1] >= HEADER_IMAGE_WIDTH ) :
@@ -47,7 +48,8 @@
                 elseif ( get_header_image() ) : ?>
                     <img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
                 <?php endif; ?>
-                <?php } ?>
+                </div>
+                <?php endif; ?>
                 
             </div><!-- #branding -->
             <div id="access" role="navigation">

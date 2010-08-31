@@ -20,10 +20,10 @@
                 <a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
                     <?php bloginfo( 'name' ); ?>
                 </a>
-                <br />
-                    
-                    Copyright 2010 - <a href="http://dflydev.com/">Dragonfly Development, Inc.</a> - All rights Reserved
             </div><!-- #site-info -->
+            <div id="site-copyright">
+                    Copyright 2010 - <a href="http://dflydev.com/">Dragonfly Development, Inc.</a> - All rights Reserved
+            </div>
         </div><!-- #colophon -->
     </div><!-- #footer -->
     </div><!-- #footer-container -->
