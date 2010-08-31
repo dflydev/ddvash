@@ -1,0 +1,86 @@
+@import url("../ddvash/core.less");
+
+@from_color: #fafafa;
+@to_color: #eee;
+
+body {
+    background-color: #eee;
+}
+
+a {
+    color: #008;
+    text-decoration: none;
+}
+
+a:visited {
+	color: #416;
+}
+
+#access {
+    .gradient_stop(#666666; #000000; #000000);
+    .rounded_corners_top(10px);
+    border-bottom: 0px;
+}
+
+.content-section {
+    .rounded_corners_bottom(10px);
+    border-top: 0px;
+    background-color: #fafafa;
+}
+
+#content,
+#sidebar {
+    margin: 1em;
+}
+
+#footer {
+    .rounded_corners_top(10px);
+    .gradient(@from_color; @to_color);
+    margin-top: 4em;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    font-size: smaller;
+}
+
+#branding {
+	margin: 1.5em 0em;
+}
+
+#site-title,
+#site-title a,
+.entry-title,
+.entry-title a,
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+	color: #444;
+}
+
+#site-description {
+    font-style: italic;
+    color: #666;
+}
+
+#content table, #content th {
+	border: 1px solid #E7E7E7;
+	margin: 0px -1px 1em 0px;
+}
+
+#content td {
+	border: none;
+	border-top: 1px solid #E7E7E7;
+	padding: 6px 24px;
+}
+
+.navigation a {
+	text-decoration: none;
+}
+
+.entry-utility,
+.entry-meta {
+	font-size: smaller;
+}

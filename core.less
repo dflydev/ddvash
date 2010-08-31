@@ -1,0 +1,34 @@
+.rounded_corners (@radius: 5px) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.rounded_corners_top (@radius: 5px) {
+  -moz-border-radius-topright: @radius;
+  -moz-border-radius-topleft: @radius;
+  -webkit-border-top-right-radius: @radius;
+  -webkit-border-top-left-radius: @radius;
+  border-top-right-radius: @radius;
+  border-top-left-radius: @radius;
+}
+
+.rounded_corners_bottom (@radius: 5px) {
+  -moz-border-radius-bottomright: @radius;
+  -moz-border-radius-bottomleft: @radius;
+  -webkit-border-bottom-right-radius: @radius;
+  -webkit-border-bottom-left-radius: @radius;
+  border-bottom-right-radius: @radius;
+  border-bottom-left-radius: @radius;
+}
+
+
+.gradient (@f_c: #ccc; @t_c: #aaa) {
+    background-image: -moz-linear-gradient(270deg, @f_c, @t_c);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(@f_c), to(@t_c));
+}
+
+.gradient_stop (@f_c: #ccc; @t_c: #aaa; @s_c: #ddd;) {
+    background-image: -moz-linear-gradient(270deg, @f_c, @s_c 90%, @t_c);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(@f_c), to(@t_c), color-stop(.9, @s_c));
+}
