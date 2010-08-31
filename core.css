@@ -1,6 +1,7 @@
 @import url("yui-reset-base-min.css");
 
 html { background: none; }
+body { margin: 0em 1em; }
 
 /*
  * Begin core layout.
