@@ -123,6 +123,7 @@ ol ul, ol dl, ol ol { margin-top: 0px; margin-bottom: 0px; }
 
 #content h1,#content h2,#content h3,#content h4,#content h5,#content h6 {
     font-family: sans-serif;
+    clear: left;
 }
 
 #content .entry-utility {
@@ -150,6 +151,11 @@ ol ul, ol dl, ol ol { margin-top: 0px; margin-bottom: 0px; }
 #sidebar ul,#sidebar ul li {
     list-style: none;
 }
+
+#sidebar ul { margin-left: 0px; margin-right: 0px; }
+#sidebar ul ul,
+#sidebar ol ul,
+#sidebar dl ul { margin-left: 2em; }
 
 #sidebar ul ul li {
     margin-top: 0em; margin-bottom: 0em;
@@ -446,7 +452,7 @@ a img {
 }
 
 .post {
-    margin-bottom: 2em;
+	padding: .5em;
 }
 
 .entry-content,
@@ -459,10 +465,6 @@ a img {
 
 #site-title a {
 	text-decoration: none;
-}
-
-.post {
-    margin-bottom: 1.5em;
 }
 
 .entry-content,
@@ -483,4 +485,8 @@ a img {
 #sidebar .widget-container {
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.sticky {
+    background-color: #efefef;
 }

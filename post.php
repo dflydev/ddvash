@@ -1,4 +1,4 @@
-<div class="post">
+<div class="post-container">
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <?php if ( $post->post_parent ) { ?>
